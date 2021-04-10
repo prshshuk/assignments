@@ -1,0 +1,54 @@
+{
+  "title": "Address resource",
+  "description": "Address resource object",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "address_id",
+      "type": "integer"
+    },
+    "line1": {
+      "description": "the address line 1",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 255
+    },
+    "line2": {
+      "description": "the address line 1",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 255
+    },
+    "city": {
+      "description": "city of address",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15
+    },
+    "state": {
+      "description": "state of the city",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15
+    },
+    "country": {
+      "description": "country of the state",
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 15
+    },
+    "zipcode": {
+      "description": "postal zip code",
+      "type": "string",
+      "minLength": 6,
+      "maxLength": 6
+    }
+  },
+  "required": [
+    "line1",
+    "city",
+    "state",
+    "country",
+    "zipcode"
+  ]
+}
