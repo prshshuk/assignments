@@ -1,2 +1,1 @@
-This fine is for assignments
-
+This repository is for the assignments
